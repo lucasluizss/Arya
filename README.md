@@ -1,5 +1,7 @@
 # 👨🏽‍💻 Arya.API
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8e2ee324f8b4a44b1b85d9ee7544768)](https://app.codacy.com/manual/lucasluizss/Arya.API?utm_source=github.com&utm_medium=referral&utm_content=lucasluizss/Arya.API&utm_campaign=Badge_Grade_Dashboard)
+
 Arya is a restful API developed using .Net Core. In your development was applied principles of DDD and SOLID.
 
 ## 🛠 Installation
