@@ -36,11 +36,7 @@ namespace Arya.Service.Services
                 return default;
             }
 
-            var tokenHandler = new JwtSecurityTokenHandler();
-
-            var securityToken = GetSecurityToken(user, tokenHandler);
-
-            var token = tokenHandler.WriteToken(securityToken);
+            var token = GetSecurityToken(user);
 
             return (user, token);
         }
@@ -49,7 +45,7 @@ namespace Arya.Service.Services
 
         public async Task<bool> UserAlreadyExists(string email) => await UserRepository.Any(predicate => predicate.Email.Address.Equals(email));
 
-        private SecurityToken GetSecurityToken(UserEntity user, JwtSecurityTokenHandler tokenHandler)
+        private string GetSecurityToken(UserEntity user)
         {
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("Auth:SecurityKey").Value);
             var expireDays = Convert.ToInt32(Configuration.GetSection("Auth:TokenExpireDays").Value);
@@ -61,7 +57,11 @@ namespace Arya.Service.Services
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
-            return tokenHandler.CreateToken(tokenDescriptor);
+            var tokenHandler = new JwtSecurityTokenHandler();
+
+            var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+
+            return tokenHandler.WriteToken(securityToken);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Arya.API.Controllers
     /// <summary>
     /// </summary>
     [ApiController]
-    [Route("Api/[controller]/[action]")]
+    [Route("Api/[controller]")]
     public class UserController : ControllerBase
     {
         private readonly ITyrion _tyrion;
@@ -27,7 +27,7 @@ namespace Arya.API.Controllers
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("Authenticate")]
         [AllowAnonymous]
         public async Task<IActionResult> Authenticate([FromBody]AuthenticateUserCommand command)
         {
@@ -99,8 +99,8 @@ namespace Arya.API.Controllers
         /// <param name="email"></param>
         /// <returns>User object.</returns>
         [Authorize]
-        [HttpGet]
-        public async Task<IActionResult> GetByEmail([FromQuery]string email)
+        [HttpGet("{email}")]
+        public async Task<IActionResult> GetByEmail(string email)
         {
             try
             {
@@ -190,7 +190,7 @@ namespace Arya.API.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [AllowAnonymous]
-        [HttpGet]
+        [HttpGet("Confirm")]
         public async Task<IActionResult> Confirm([FromQuery] Guid id)
         {
             try
