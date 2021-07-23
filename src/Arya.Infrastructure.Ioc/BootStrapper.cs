@@ -37,12 +37,12 @@ namespace Arya.Infrastructure.Ioc
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
         }
 
-        private static void Services(IServiceCollection services)
+        private static void Services(IServiceCollection serviceCollection)
         {
-            services.AddLocalization(o => o.ResourcesPath = "Resources");
+            serviceCollection.AddLocalization(o => o.ResourcesPath = "Resources");
 
-            services.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
-            services.AddScoped<IUserService, UserService>();
+            serviceCollection.AddScoped(typeof(IServiceBase<>), typeof(ServiceBase<>));
+            serviceCollection.AddScoped<IUserService, UserService>();
         }
     }
 }

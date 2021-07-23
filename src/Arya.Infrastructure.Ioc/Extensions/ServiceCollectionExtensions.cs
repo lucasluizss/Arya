@@ -105,7 +105,7 @@ namespace Arya.Infrastructure.Ioc.Extensions
                     Scheme = "Bearer"
                 });
 
-                options.AddSecurityRequirement(new OpenApiSecurityRequirement() {
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement {
                 {
                     new OpenApiSecurityScheme
                     {
