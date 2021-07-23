@@ -1,7 +1,7 @@
 ﻿# 👨🏽‍💻 Arya.API
 
 [![Build Status](https://dev.azure.com/lucasluizss/Arya.API/_apis/build/status/lucasluizss.Arya.API?branchName=master)](https://dev.azure.com/lucasluizss/Arya.API/_build/latest?definitionId=13&branchName=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fdad6905e0154faeb0175398d9747adb)](https://www.codacy.com/manual/lucasluizss/Arya.API?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucasluizss/Arya.API&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fab4f7a06ce848f5991460829dfb3d16)](https://www.codacy.com/gh/lucasluizss/Arya/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucasluizss/Arya&amp;utm_campaign=Badge_Grade)
 
 Arya is a restful API developed using .Net Core. In your development was applied principles of DDD and SOLID.
 
