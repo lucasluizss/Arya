@@ -3,6 +3,8 @@
 [![Build Status](https://dev.azure.com/lucasluizss/Arya.API/_apis/build/status/lucasluizss.Arya.API?branchName=master)](https://dev.azure.com/lucasluizss/Arya.API/_build/latest?definitionId=13&branchName=master)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/fab4f7a06ce848f5991460829dfb3d16)](https://www.codacy.com/gh/lucasluizss/Arya/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucasluizss/Arya&amp;utm_campaign=Badge_Grade)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=lucasluizss_Arya)](https://sonarcloud.io/dashboard?id=lucasluizss_Arya)
+
 Arya is a restful API developed using .Net Core. In your development was applied principles of DDD and SOLID.
 
 ## 🛠 Installation
