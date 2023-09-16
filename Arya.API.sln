@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Application", "src\Ary
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arya.Infrastructure.Core", "src\Arya.Infrastructure.Core\Arya.Infrastructure.Core.csproj", "{DB385BC9-3E8E-4DE6-9F1B-5395E466F629}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arya.Tests", "src\Arya.Tests\Arya.Tests.csproj", "{E15FAFE6-C66E-44E5-A643-44A11642E06B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arya.Unit.Tests", "src\Arya.Unit.Tests\Arya.Unit.Tests.csproj", "{E15FAFE6-C66E-44E5-A643-44A11642E06B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

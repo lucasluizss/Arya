@@ -34,17 +34,13 @@ namespace Arya.API
             services.AddControllers().AddJsonOptions(options =>
             {
                 var serializerOptions = options.JsonSerializerOptions;
-                serializerOptions.IgnoreNullValues = true;
+                serializerOptions.PropertyNameCaseInsensitive = true;
             });
 
             services.AddSwagger();
-
             services.AddJwt(Configuration.GetSection("Auth:SecurityKey").Value);
-
             services.AddEmail();
-
             services.InitializeMySqlDataBase(Configuration.GetConnectionString("DefaultConnection"));
-
             services.RegisterServices();
         }
 
@@ -60,9 +56,7 @@ namespace Arya.API
             }
 
             app.UseSwagger();
-
             app.UseRouting();
-
             app.UseAuthentication();
             app.UseAuthorization();
 

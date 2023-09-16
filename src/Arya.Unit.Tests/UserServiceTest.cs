@@ -4,14 +4,14 @@ using Arya.Infrastructure.Core.Domain.ValueObjects;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Arya.Tests
+namespace Arya.Unit.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class UserServiceTest
     {
         private readonly IUserService _userService;
 
-        public UnitTest1()
+        public UserServiceTest()
         {
             var services = new ServiceCollection();
             _userService = services.BuildServiceProvider().GetRequiredService<IUserService>();
