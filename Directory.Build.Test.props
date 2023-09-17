@@ -1,0 +1,10 @@
+<Project>
+    <PropertyGroup>
+        <TargetFrameworkVersion>net7.0</TargetFrameworkVersion>
+        
+        <MicrosoftNETTestSdkVersion>16.6.1</MicrosoftNETTestSdkVersion>
+        <MSTestTestAdapterVersion>2.1.1</MSTestTestAdapterVersion>
+        <MSTestTestFrameworkVersion>2.1.1</MSTestTestFrameworkVersion>
+        <CoverletcollectorVersion>1.2.1</CoverletcollectorVersion>
+    </PropertyGroup>
+</Project>
